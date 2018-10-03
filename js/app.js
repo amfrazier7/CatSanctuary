@@ -1,12 +1,12 @@
-window.onscroll = function() {myFunction()};
+/* ### MAIN JAVASCRIPT ### */
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+/* jQuery for text overlay on main image */
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+$(function() {
+    $("h1")
+    .wrapInner("<span>")
+
+    $("h1 br")
+    .before ("<span class='spacer'>")
+    .after("<span class='spacer'>");
+});

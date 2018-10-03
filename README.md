@@ -2,7 +2,7 @@
 
 ## Description
 ```
-A brief description of your project
+This is a mockup of a website for a cat sanctuary organization.
 
 ```
 
