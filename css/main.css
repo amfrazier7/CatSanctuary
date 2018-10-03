@@ -1,0 +1,159 @@
+/* ### MAIN CSS ### */
+
+/* BASE ELEMENTS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+p {
+    font-size: 1.05em;
+    margin-top: 1em;
+    margin-bottom: .25em;
+}
+
+.list li {
+    list-style-type: square;
+    margin: 5px 0px 5px 55px;
+    font-size: 1.05em;
+}
+
+/* LINK STYLING*/
+
+a {
+    text-decoration: none;
+    color: darkgray;
+}
+
+a:hover {
+    color: darkgray;
+}
+
+a:visited {
+    color: lightgray;
+}
+
+/* TOP NAVIGATION STYLING */
+
+.main-header {
+    background: black;
+    padding-top: .15em;
+    padding-bottom: .5em;
+}
+
+.main-nav {
+    margin-top: 7px;
+}
+
+    .main-nav a {
+        display: block;
+        text-align:center;
+        padding: 10px 15px;
+        font-size: .95em;
+        font-weight: 900;
+        color: white;
+    }
+
+        .main-nav li {
+        display: inline-block;
+        margin-left: 15px;
+    }
+
+
+/* IMAGE AND IMAGE CAPTION STYLING*/
+
+.main-img {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    opacity: .75;
+}
+
+h1 {
+    position: absolute;
+    top: 125%;
+    left: 0%;
+    transform: translate (-50%, -50%);
+    width: 100%;
+    color: white;
+    letter-spacing: -.5px;
+    background: black;
+    text-align: center;
+}
+/* FOOTER STYLING*/
+
+.main-footer {
+    background: black;
+    padding: 5em, 0;
+    margin-top: 40px;
+    color: white;
+    text-align: center;
+}
+
+.aboutUs {
+    background-color:white;
+    padding: 5px 25px 20px 50px;
+    margin: 20px;
+    }
+
+.waysToHelp {
+    background-color:white;
+    padding: 5px 25px 20px 50px;
+    margin: 20px;
+    }
+ 
+/* media queries*/
+
+@media (min-wdith: 769px) {
+
+    body {
+        padding-top: 68px;
+
+    }
+
+    .main-header {
+        position: fixed;
+        background: black;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .main-nav {
+        float: right;
+    }
+
+    .main-nav li {
+        display: block;
+        margin-left: 15px;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        position:fixed;
+    }
+
+    .clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+}
+
